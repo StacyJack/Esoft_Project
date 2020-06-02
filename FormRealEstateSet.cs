@@ -390,5 +390,10 @@ namespace Esoft_Project
                 MessageBox.Show("Невозмсожно удалить, эту запись используется", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void FormRealEstateSet_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

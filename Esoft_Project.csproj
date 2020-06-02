@@ -61,6 +61,15 @@
     <Compile Include="ClientsSet.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="DemandForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemandForm.Designer.cs">
+      <DependentUpon>DemandForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemandSet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +94,12 @@
     <Compile Include="FormRealEstateSet.Designer.cs">
       <DependentUpon>FormRealEstateSet.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSupply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSupply.Designer.cs">
+      <DependentUpon>FormSupply.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -105,6 +120,15 @@
     <Compile Include="RealEstateSet.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="SupplySet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DemandForm.resx">
+      <DependentUpon>DemandForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRealEstateSet.resx">
       <DependentUpon>FormRealEstateSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSupply.resx">
+      <DependentUpon>FormSupply.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

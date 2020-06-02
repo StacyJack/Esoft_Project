@@ -28,26 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Logo = new System.Windows.Forms.PictureBox();
             this.buttonPpenClients = new System.Windows.Forms.Button();
             this.buttonOpenAgents = new System.Windows.Forms.Button();
             this.buttonOpenRealEstates = new System.Windows.Forms.Button();
-            this.buttonOpenDemands = new System.Windows.Forms.Button();
+            this.buttonOpenSupplSet = new System.Windows.Forms.Button();
             this.buttonOpenSupplies = new System.Windows.Forms.Button();
             this.buttonOpenDeals = new System.Windows.Forms.Button();
+            this.Logo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Logo
-            // 
-            this.Logo.Image = global::Esoft_Project.Properties.Resources.logo;
-            this.Logo.Location = new System.Drawing.Point(-4, -1);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(279, 146);
-            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Logo.TabIndex = 0;
-            this.Logo.TabStop = false;
-            this.Logo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // buttonPpenClients
             // 
@@ -79,14 +68,15 @@
             this.buttonOpenRealEstates.UseVisualStyleBackColor = true;
             this.buttonOpenRealEstates.Click += new System.EventHandler(this.buttonOpenRealEstates_Click);
             // 
-            // buttonOpenDemands
+            // buttonOpenSupplSet
             // 
-            this.buttonOpenDemands.Location = new System.Drawing.Point(12, 346);
-            this.buttonOpenDemands.Name = "buttonOpenDemands";
-            this.buttonOpenDemands.Size = new System.Drawing.Size(265, 48);
-            this.buttonOpenDemands.TabIndex = 4;
-            this.buttonOpenDemands.Text = "Предложения";
-            this.buttonOpenDemands.UseVisualStyleBackColor = true;
+            this.buttonOpenSupplSet.Location = new System.Drawing.Point(12, 346);
+            this.buttonOpenSupplSet.Name = "buttonOpenSupplSet";
+            this.buttonOpenSupplSet.Size = new System.Drawing.Size(265, 48);
+            this.buttonOpenSupplSet.TabIndex = 4;
+            this.buttonOpenSupplSet.Text = "Предложения";
+            this.buttonOpenSupplSet.UseVisualStyleBackColor = true;
+            this.buttonOpenSupplSet.Click += new System.EventHandler(this.buttonOpenDemands_Click);
             // 
             // buttonOpenSupplies
             // 
@@ -96,6 +86,7 @@
             this.buttonOpenSupplies.TabIndex = 5;
             this.buttonOpenSupplies.Text = "Потребности";
             this.buttonOpenSupplies.UseVisualStyleBackColor = true;
+            this.buttonOpenSupplies.Click += new System.EventHandler(this.buttonOpenSupplies_Click);
             // 
             // buttonOpenDeals
             // 
@@ -107,6 +98,17 @@
             this.buttonOpenDeals.UseVisualStyleBackColor = true;
             this.buttonOpenDeals.Click += new System.EventHandler(this.button6_Click);
             // 
+            // Logo
+            // 
+            this.Logo.Image = global::Esoft_Project.Properties.Resources.logo;
+            this.Logo.Location = new System.Drawing.Point(-4, -1);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(279, 146);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo.TabIndex = 0;
+            this.Logo.TabStop = false;
+            this.Logo.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -114,7 +116,7 @@
             this.ClientSize = new System.Drawing.Size(279, 561);
             this.Controls.Add(this.buttonOpenDeals);
             this.Controls.Add(this.buttonOpenSupplies);
-            this.Controls.Add(this.buttonOpenDemands);
+            this.Controls.Add(this.buttonOpenSupplSet);
             this.Controls.Add(this.buttonOpenRealEstates);
             this.Controls.Add(this.buttonOpenAgents);
             this.Controls.Add(this.buttonPpenClients);
@@ -134,7 +136,7 @@
         private System.Windows.Forms.Button buttonPpenClients;
         private System.Windows.Forms.Button buttonOpenAgents;
         private System.Windows.Forms.Button buttonOpenRealEstates;
-        private System.Windows.Forms.Button buttonOpenDemands;
+        private System.Windows.Forms.Button buttonOpenSupplSet;
         private System.Windows.Forms.Button buttonOpenSupplies;
         private System.Windows.Forms.Button buttonOpenDeals;
     }
