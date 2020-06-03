@@ -4,17 +4,20 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="4bca06606a8345f99daefcade31165bb" Name="Diagram1">
-        <EntityTypeShape EntityType="Model1.AgentSet" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model1.ClientsSet" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model1.DemandSet" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model1.RealEstateSet" Width="1.5" PointX="3.75" PointY="10.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model1.SupplySet" Width="1.5" PointX="6" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model1.Users" Width="1.5" PointX="5.75" PointY="1.875" IsExpanded="true" />
+      <Diagram DiagramId="8f2376305f464694b600f112e101386c" Name="Diagram1">
+        <EntityTypeShape EntityType="Model1.AgentSet" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.ClientsSet" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.DealSet" Width="1.5" PointX="8.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.DemandSet" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.RealEstateSet" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.SupplySet" Width="1.5" PointX="6" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.Users" Width="1.5" PointX="5.75" PointY="3.125" IsExpanded="true" />
         <AssociationConnector Association="Model1.FK_DemandSet_AgentSet" ManuallyRouted="false" />
         <AssociationConnector Association="Model1.FK_SupplySet_AgentSet" ManuallyRouted="false" />
         <AssociationConnector Association="Model1.FK_DemandSet_ClientsSet" ManuallyRouted="false" />
         <AssociationConnector Association="Model1.FK_SupplySet_ClientsSet" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_DealSet_DemandSet" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_DealSet_SupplySet" ManuallyRouted="false" />
         <AssociationConnector Association="Model1.FK_SupplySet_RealEstateSet" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>

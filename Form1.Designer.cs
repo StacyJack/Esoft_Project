@@ -35,6 +35,7 @@
             this.buttonOpenSupplies = new System.Windows.Forms.Button();
             this.buttonOpenDeals = new System.Windows.Forms.Button();
             this.Logo = new System.Windows.Forms.PictureBox();
+            this.labellabelHello = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,7 +102,7 @@
             // Logo
             // 
             this.Logo.Image = global::Esoft_Project.Properties.Resources.logo;
-            this.Logo.Location = new System.Drawing.Point(-4, -1);
+            this.Logo.Location = new System.Drawing.Point(-2, 17);
             this.Logo.Name = "Logo";
             this.Logo.Size = new System.Drawing.Size(279, 146);
             this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -109,11 +110,21 @@
             this.Logo.TabStop = false;
             this.Logo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // labellabelHello
+            // 
+            this.labellabelHello.AutoSize = true;
+            this.labellabelHello.Location = new System.Drawing.Point(7, 1);
+            this.labellabelHello.Name = "labellabelHello";
+            this.labellabelHello.Size = new System.Drawing.Size(44, 13);
+            this.labellabelHello.TabIndex = 7;
+            this.labellabelHello.Text = "Привет";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(279, 561);
+            this.Controls.Add(this.labellabelHello);
             this.Controls.Add(this.buttonOpenDeals);
             this.Controls.Add(this.buttonOpenSupplies);
             this.Controls.Add(this.buttonOpenSupplSet);
@@ -127,6 +138,7 @@
             this.Load += new System.EventHandler(this.Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -139,6 +151,7 @@
         private System.Windows.Forms.Button buttonOpenSupplSet;
         private System.Windows.Forms.Button buttonOpenSupplies;
         private System.Windows.Forms.Button buttonOpenDeals;
+        private System.Windows.Forms.Label labellabelHello;
     }
 }
 
